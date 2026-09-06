@@ -1,0 +1,40 @@
+<Root Name="Terrain" Visible="true" ObType="3">
+    <Mesh File="Terrain/ter7.mesh"/>
+    <Shader File="5.Terrain.hlsl"/>
+    <Material File="Terrains/GrassAndDirt.mtl"/>
+    <Collider ColliderType="2" Enable="true" Visible="true" GameType="0">
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="128" Y="100" Z="128"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Collider>
+    <Transform>
+        <Position X="-768" Y="0" Z="0"/>
+        <Scale X="3" Y="1" Z="3"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="1"/>
+    <Child0 Name="Deco" Visible="true" ObType="0">
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="3" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="Water1" Visible="true" ObType="0">
+            <Mesh File="3.TextureCube.mesh"/>
+            <Shader File="3.ColorShapes.hlsl"/>
+            <Material File="Terrains/water.mtl"/>
+            <Collider ColliderType="2" Enable="true" Visible="true" GameType="0">
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Collider>
+            <Transform>
+                <Position X="35.216667" Y="-0.98333335" Z="-23.350002"/>
+                <Scale X="92.300003" Y="0.33000001" Z="82.900002"/>
+                <Rotation X="0.011693707" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child0>
+</Root>

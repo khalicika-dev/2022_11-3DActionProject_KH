@@ -1,0 +1,295 @@
+<Root Name="RootNode" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="Drone/Drone.skel" BoneIndexCount="28"/>
+    <Animations AnimSize="9" File0="Drone/0_Idle.anim" File1="Drone/1_Appear.anim" File2="Drone/2_Recognize.anim" File3="Drone/3_Move.anim" File4="Drone/4_Attack.anim" File5="Drone/5_Burst.anim" File6="Drone/6_Hit.anim" File7="Drone/7_Fall.anim" File8="Drone/8_Death.anim"/>
+    <Shader File="4.Model.hlsl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="1" Y="1" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="3"/>
+    <Child0 Name="BlockCollider1" Visible="true" ObType="0" BoneIndex="-1">
+        <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+            <Position X="0" Y="1.5" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="MoveCollider" Visible="true" ObType="0" BoneIndex="-1">
+        <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+            <Position X="0" Y="1.5" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child1>
+    <Child2 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.Model.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="1.5707964" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="2"/>
+        <Child0 Name="Base" Visible="true" ObType="0" BoneIndex="2">
+            <Shader File="4.Model.hlsl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="1"/>
+            <Child0 Name="Root" Visible="true" ObType="0" BoneIndex="3">
+                <Shader File="4.Model.hlsl"/>
+                <Transform>
+                    <Position X="0" Y="0" Z="0"/>
+                    <Scale X="1" Y="1" Z="1"/>
+                    <Rotation X="-1.5707963" Y="-0" Z="0"/>
+                </Transform>
+                <Children Size="1"/>
+                <Child0 Name="Root_Rot" Visible="true" ObType="0" BoneIndex="4">
+                    <Shader File="4.Model.hlsl"/>
+                    <Transform>
+                        <Position X="0" Y="1.5399001" Z="0.32172987"/>
+                        <Scale X="1" Y="1" Z="1"/>
+                        <Rotation X="0" Y="0" Z="-0"/>
+                    </Transform>
+                    <Children Size="1"/>
+                    <Child0 Name="Root_Move" Visible="true" ObType="0" BoneIndex="5">
+                        <Shader File="4.Model.hlsl"/>
+                        <Transform>
+                            <Position X="-2.8431034e-15" Y="-0.28463745" Z="1.6006888"/>
+                            <Scale X="1" Y="1" Z="1"/>
+                            <Rotation X="-1.5707963" Y="1.4305115e-06" Z="0"/>
+                        </Transform>
+                        <Children Size="11"/>
+                        <Child0 Name="Guns.L" Visible="true" ObType="0" BoneIndex="15">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="1.7486514" Y="0.70012659" Z="0.096399739"/>
+                                <Scale X="1" Y="1" Z="1"/>
+                                <Rotation X="0" Y="0" Z="-0"/>
+                            </Transform>
+                            <Children Size="5"/>
+                            <Child0 Name="Rigid_Body.L.003" Visible="true" ObType="0" BoneIndex="16">
+                                <Shader File="4.Model.hlsl"/>
+                                <Transform>
+                                    <Position X="-1.2039955e-06" Y="0.45077762" Z="0.26742902"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="-0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child0>
+                            <Child1 Name="Rigid_Body.L.004" Visible="true" ObType="0" BoneIndex="20">
+                                <Shader File="4.Model.hlsl"/>
+                                <Transform>
+                                    <Position X="-0.24585208" Y="0.49586317" Z="-0.39493355"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="-0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child1>
+                            <Child2 Name="Rigid_Body.L.005" Visible="true" ObType="0" BoneIndex="17">
+                                <Shader File="4.Model.hlsl"/>
+                                <Transform>
+                                    <Position X="-0.05644203" Y="1.6964028" Z="0.37991133"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="9.7043134e-08" Y="3.1415884" Z="0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child2>
+                            <Child3 Name="Rigid_Body.L.006" Visible="true" ObType="0" BoneIndex="18">
+                                <Shader File="4.Model.hlsl"/>
+                                <Transform>
+                                    <Position X="-0.053706635" Y="1.6964028" Z="0.14873616"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="-0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child3>
+                            <Child4 Name="Rigid_Body.L.007" Visible="true" ObType="0" BoneIndex="19">
+                                <Shader File="4.Model.hlsl"/>
+                                <Transform>
+                                    <Position X="-0.30263317" Y="1.4107529" Z="-0.39111963"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="-0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child4>
+                        </Child0>
+                        <Child1 Name="Guns.R" Visible="true" ObType="0" BoneIndex="21">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="-1.7486516" Y="0.70012659" Z="0.096395046"/>
+                                <Scale X="1" Y="1" Z="1"/>
+                                <Rotation X="0" Y="0" Z="-0"/>
+                            </Transform>
+                            <Children Size="5"/>
+                            <Child0 Name="Rigid_Body.R.003" Visible="true" ObType="0" BoneIndex="22">
+                                <Shader File="4.Model.hlsl"/>
+                                <Transform>
+                                    <Position X="1.2039952e-06" Y="0.45077762" Z="0.26742902"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="-0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child0>
+                            <Child1 Name="Rigid_Body.R.004" Visible="true" ObType="0" BoneIndex="26">
+                                <Shader File="4.Model.hlsl"/>
+                                <Transform>
+                                    <Position X="0.24585208" Y="0.49586317" Z="-0.39493355"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="-0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child1>
+                            <Child2 Name="Rigid_Body.R.005" Visible="true" ObType="0" BoneIndex="23">
+                                <Shader File="4.Model.hlsl"/>
+                                <Transform>
+                                    <Position X="0.05644203" Y="1.6964028" Z="0.37991133"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="9.7043134e-08" Y="-3.1415884" Z="0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child2>
+                            <Child3 Name="Rigid_Body.R.006" Visible="true" ObType="0" BoneIndex="24">
+                                <Shader File="4.Model.hlsl"/>
+                                <Transform>
+                                    <Position X="0.053706635" Y="1.6964028" Z="0.14873616"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="-0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child3>
+                            <Child4 Name="Rigid_Body.R.007" Visible="true" ObType="0" BoneIndex="25">
+                                <Shader File="4.Model.hlsl"/>
+                                <Transform>
+                                    <Position X="0.30263317" Y="1.4107529" Z="-0.39111957"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="-0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child4>
+                        </Child1>
+                        <Child2 Name="Rigid_Body" Visible="true" ObType="0" BoneIndex="6">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="-3.8229254e-07" Y="1.6446581" Z="0.28463677"/>
+                                <Scale X="1" Y="1" Z="1"/>
+                                <Rotation X="-1.7149421e-05" Y="-1.1920929e-06" Z="0"/>
+                            </Transform>
+                            <Children Size="1"/>
+                            <Child0 Name="HitCollider1" Visible="true" ObType="0" BoneIndex="-1">
+                                <Collider ColliderType="2" Enable="true" Visible="true" GameType="56">
+                                    <Position X="0" Y="0" Z="0"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="0"/>
+                                </Collider>
+                                <Transform>
+                                    <Position X="0" Y="0" Z="-0.1"/>
+                                    <Scale X="1.85" Y="1.4" Z="1.1"/>
+                                    <Rotation X="0" Y="0" Z="0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child0>
+                        </Child2>
+                        <Child3 Name="Rigid_Body.001" Visible="true" ObType="0" BoneIndex="9">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="-3.7853158e-07" Y="2.9568202" Z="0.28183654"/>
+                                <Scale X="1" Y="1" Z="1"/>
+                                <Rotation X="-1.8473242e-05" Y="-2.3841858e-07" Z="0"/>
+                            </Transform>
+                            <Children Size="0"/>
+                        </Child3>
+                        <Child4 Name="Rigid_Body.002" Visible="true" ObType="0" BoneIndex="12">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="0.15192179" Y="1.4379425" Z="1.4586658"/>
+                                <Scale X="1" Y="1" Z="1"/>
+                                <Rotation X="0" Y="0" Z="-0"/>
+                            </Transform>
+                            <Children Size="0"/>
+                        </Child4>
+                        <Child5 Name="Rigid_Body.L" Visible="true" ObType="0" BoneIndex="7">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="0.57070726" Y="2.8874831" Z="0.40737209"/>
+                                <Scale X="1" Y="1" Z="1"/>
+                                <Rotation X="0" Y="0" Z="-0"/>
+                            </Transform>
+                            <Children Size="0"/>
+                        </Child5>
+                        <Child6 Name="Rigid_Body.L.001" Visible="true" ObType="0" BoneIndex="10">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="0.59631526" Y="1.6311587" Z="-0.79102618"/>
+                                <Scale X="1" Y="1" Z="1"/>
+                                <Rotation X="0" Y="0" Z="-0"/>
+                            </Transform>
+                            <Children Size="0"/>
+                        </Child6>
+                        <Child7 Name="Rigid_Body.L.002" Visible="true" ObType="0" BoneIndex="13">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="0.60896373" Y="0.23563816" Z="0.4331198"/>
+                                <Scale X="1" Y="1" Z="1"/>
+                                <Rotation X="1.5707963" Y="2.5924837e-07" Z="0"/>
+                            </Transform>
+                            <Children Size="0"/>
+                        </Child7>
+                        <Child8 Name="Rigid_Body.R" Visible="true" ObType="0" BoneIndex="8">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="-0.57070833" Y="2.8874831" Z="0.40737054"/>
+                                <Scale X="1" Y="1" Z="1"/>
+                                <Rotation X="0" Y="0" Z="-0"/>
+                            </Transform>
+                            <Children Size="0"/>
+                        </Child8>
+                        <Child9 Name="Rigid_Body.R.001" Visible="true" ObType="0" BoneIndex="11">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="-0.59631312" Y="1.6311587" Z="-0.79102749"/>
+                                <Scale X="1" Y="1" Z="1"/>
+                                <Rotation X="0" Y="0" Z="-0"/>
+                            </Transform>
+                            <Children Size="0"/>
+                        </Child9>
+                        <Child10 Name="Rigid_Body.R.002" Visible="true" ObType="0" BoneIndex="14">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="-0.60896498" Y="0.23563816" Z="0.43311828"/>
+                                <Scale X="1" Y="1" Z="1"/>
+                                <Rotation X="1.5707963" Y="-2.9514654e-06" Z="0"/>
+                            </Transform>
+                            <Children Size="0"/>
+                        </Child10>
+                    </Child0>
+                </Child0>
+            </Child0>
+        </Child0>
+        <Child1 Name="Patrol" Visible="true" ObType="0" BoneIndex="27">
+            <Mesh File="Drone/Patrol.mesh"/>
+            <Shader File="4.Model.hlsl"/>
+            <Material File="Drone/Patrol.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child1>
+    </Child2>
+</Root>

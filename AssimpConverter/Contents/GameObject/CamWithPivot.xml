@@ -1,0 +1,32 @@
+<Root Name="Root" Visible="true" ObType="1">
+    <Mesh File="2.Sphere.mesh"/>
+    <Shader File="2.Shapes.hlsl"/>
+    <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="1" Y="1" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Collider>
+    <Transform>
+        <Position X="-40.150002" Y="19.5" Z="0"/>
+        <Scale X="1" Y="1" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="1"/>
+    <Child0 Name="CameraPivot" Visible="true" ObType="0">
+        <Transform>
+            <Position X="0" Y="3.5" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="-0.52333333" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="Camera" Visible="true" ObType="2">
+            <Transform>
+                <Position X="0" Y="0" Z="11"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="3.1399999" Z="0"/>
+            </Transform>
+            <Camera Ortho="false" Fov="1.047192" Width="1763" Height="1008" NearZ="0.1" FarZ="2500" viewportX="0" viewportY="0" viewportW="1763" viewportH="1008"/>
+            <Children Size="0"/>
+        </Child0>
+    </Child0>
+</Root>

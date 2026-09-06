@@ -1,0 +1,55 @@
+# ==========================================
+# Visual Studio 빌드 및 프로젝트 임시 파일
+# ==========================================
+# 빌드 결과물 (디버그/릴리즈)
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+
+# Visual Studio 캐시 및 로컬 설정
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# 컴파일러 생성 파일
+*.aps
+*.odl
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.gch
+*.pch
+
+!WindowsProject1/Object/*
+
+# 메타데이터 및 로그
+*.meta
+*.log
+*.tlog
+*.lastbuildstate
+
+# ==========================================
+# DirectX 및 그래픽 컴파일 아티팩트
+# ==========================================
+# HLSL 셰이더 컴파일 결과물
+*.cso
+
+# ==========================================
+# 백업 및 패키지 관리
+# ==========================================
+# 백업 파일
+*.bak
+
+# NuGet 패키지
+packages/
+!packages/repository.config
+
+# vcpkg (C++ 패키지 관리자 사용 시)
+vcpkg_installed/
+vcpkg-configuration.json

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="LoadingScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene1.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObject\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="GObjectManager.h">
+      <Filter>GameObject\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="Effect_Hit.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Player_Interface.h">
+      <Filter>GameObject\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemManager.h">
+      <Filter>GameObject\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="DmgNumber.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoMsg.h">
+      <Filter>GameObject\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>GameObject\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster_Goblin.h">
+      <Filter>GameObject\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster_Drone.h">
+      <Filter>GameObject\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>GameObject\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet_Red.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Object_Trail.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster_Giant.h">
+      <Filter>GameObject\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="LoadingScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene1.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameObject\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="GObjectManager.cpp">
+      <Filter>GameObject\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="Effect_Hit.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Player_Interface.cpp">
+      <Filter>GameObject\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemManager.cpp">
+      <Filter>GameObject\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="DmgNumber.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoMsg.cpp">
+      <Filter>GameObject\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>GameObject\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster_Goblin.cpp">
+      <Filter>GameObject\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster_Drone.cpp">
+      <Filter>GameObject\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>GameObject\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet_Red.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Object_Trail.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster_Giant.cpp">
+      <Filter>GameObject\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseMenu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{e6d5a275-c725-47e6-93cf-83c2b208fddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{b626eecd-f76c-49d7-8a29-a4515a4fda19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Base">
+      <UniqueIdentifier>{821123ca-bded-451f-aef3-9ded99cdd441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Player">
+      <UniqueIdentifier>{0833ad8c-a4e6-499e-aea1-1a4fa41c0681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Monster">
+      <UniqueIdentifier>{78bdbfae-3f69-4c0e-aa04-6240906166e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="window.ini" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,946 @@
+<Root Name="RootNode" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="Giant/Giant.skel" BoneIndexCount="47"/>
+    <Animations AnimSize="23" File0="Giant/0_Idle.anim" File1="Giant/1_Recognize.anim" File2="Giant/2_Walk.anim" File3="Giant/3_LTurn.anim" File4="Giant/4_RTurn.anim" File5="Giant/5_Attack1.anim" File6="Giant/6_Attack2.anim" File7="Giant/7_Attack3.anim" File8="Giant/8_Attack_Stomp.anim" File9="Giant/9_Taunt.anim" File10="Giant/10_Attack_Jump_Begin.anim" File11="Giant/11_Attack_Jump_End.anim" File12="Giant/12_Backstep.anim" File13="Giant/13_StunL.anim" File14="Giant/14_StunR.anim" File15="Giant/15_Groggy_Begin.anim" File16="Giant/16_Groggy_Ing.anim" File17="Giant/17_Groggy_End.anim" File18="Giant/18_Death.anim" File19="Giant/19_Cinematic_001_08.anim" File20="Giant/20_Cinematic_001_10.anim" File21="Giant/21_Cinematic_001_12.anim" File22="Giant/22_Cinematic_001_13.anim"/>
+    <Shader File="4.Model.hlsl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="1" Y="1" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="2"/>
+    <Child0 Name="MoveCollider" Visible="true" ObType="0" BoneIndex="-1">
+        <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+            <Position X="0" Y="10.24" Z="0"/>
+            <Scale X="8" Y="8" Z="8"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.Model.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="8" Y="8" Z="8"/>
+            <Rotation X="1.5707964" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="4"/>
+        <Child0 Name="Base" Visible="true" ObType="0" BoneIndex="2">
+            <Shader File="4.Model.hlsl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="1"/>
+            <Child0 Name="Root" Visible="true" ObType="0" BoneIndex="3">
+                <Shader File="4.Model.hlsl"/>
+                <Transform>
+                    <Position X="0" Y="0" Z="0"/>
+                    <Scale X="1" Y="1" Z="1"/>
+                    <Rotation X="-1.5707963" Y="-0" Z="0"/>
+                </Transform>
+                <Children Size="2"/>
+                <Child0 Name="CameraPivotBone" Visible="true" ObType="0" BoneIndex="4">
+                    <Shader File="4.Model.hlsl"/>
+                    <Transform>
+                        <Position X="0" Y="0" Z="0"/>
+                        <Scale X="1" Y="1" Z="1"/>
+                        <Rotation X="0" Y="0" Z="-0"/>
+                    </Transform>
+                    <Children Size="1"/>
+                    <Child0 Name="CameraBone" Visible="true" ObType="0" BoneIndex="5">
+                        <Shader File="4.Model.hlsl"/>
+                        <Transform>
+                            <Position X="0" Y="1.2517766" Z="6.0502"/>
+                            <Scale X="1" Y="1" Z="1"/>
+                            <Rotation X="1.5707963" Y="3.1415927" Z="0"/>
+                        </Transform>
+                        <Children Size="1"/>
+                        <Child0 Name="MotionCamera" Visible="true" ObType="2" BoneIndex="6">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="0" Y="0" Z="0"/>
+                                <Scale X="1" Y="1" Z="1"/>
+                                <Rotation X="-1.5707964" Y="0" Z="0"/>
+                            </Transform>
+                            <Camera Ortho="false" Fov="0.60213858" Width="1355" Height="910" NearZ="0.1" FarZ="500" viewportX="0" viewportY="0" viewportW="1355" viewportH="910"/>
+                            <Children Size="0"/>
+                        </Child0>
+                    </Child0>
+                </Child0>
+                <Child1 Name="Root_Rot" Visible="true" ObType="0" BoneIndex="7">
+                    <Shader File="4.Model.hlsl"/>
+                    <Transform>
+                        <Position X="0" Y="0" Z="0"/>
+                        <Scale X="1" Y="1" Z="1"/>
+                        <Rotation X="0" Y="0" Z="-0"/>
+                    </Transform>
+                    <Children Size="8"/>
+                    <Child0 Name="AttackCollider1_3" Visible="true" ObType="0" BoneIndex="-1">
+                        <Collider ColliderType="0" Enable="true" Visible="true" GameType="128">
+                            <Position X="-0.11875" Y="0" Z="-6.3937502"/>
+                            <Scale X="0.89999998" Y="0.89999998" Z="0.89999998"/>
+                            <Rotation X="0" Y="0" Z="0"/>
+                        </Collider>
+                        <Transform>
+                            <Position X="0" Y="0" Z="0"/>
+                            <Scale X="1" Y="1" Z="1"/>
+                            <Rotation X="0" Y="0" Z="0"/>
+                        </Transform>
+                        <Children Size="0"/>
+                    </Child0>
+                    <Child1 Name="AttackCollider2_4" Visible="true" ObType="0" BoneIndex="-1">
+                        <Collider ColliderType="0" Enable="true" Visible="true" GameType="128">
+                            <Position X="0.39375001" Y="0" Z="-0.98750001"/>
+                            <Scale X="1" Y="1" Z="1"/>
+                            <Rotation X="0" Y="0" Z="0"/>
+                        </Collider>
+                        <Transform>
+                            <Position X="0" Y="0" Z="0"/>
+                            <Scale X="1" Y="1" Z="1"/>
+                            <Rotation X="0" Y="0" Z="0"/>
+                        </Transform>
+                        <Children Size="0"/>
+                    </Child1>
+                    <Child2 Name="AttackCollider2_5" Visible="true" ObType="0" BoneIndex="-1">
+                        <Collider ColliderType="0" Enable="true" Visible="true" GameType="128">
+                            <Position X="0" Y="0" Z="-3.5374999"/>
+                            <Scale X="1.5" Y="1.5" Z="1.5"/>
+                            <Rotation X="0" Y="0" Z="0"/>
+                        </Collider>
+                        <Transform>
+                            <Position X="0" Y="0" Z="0"/>
+                            <Scale X="1" Y="1" Z="1"/>
+                            <Rotation X="0" Y="0" Z="0"/>
+                        </Transform>
+                        <Children Size="0"/>
+                    </Child2>
+                    <Child3 Name="IkLegTarget.L" Visible="true" ObType="0" BoneIndex="39">
+                        <Shader File="4.Model.hlsl"/>
+                        <Transform>
+                            <Position X="0.40189999" Y="0.71439999" Z="0.0394"/>
+                            <Scale X="1" Y="1" Z="1"/>
+                            <Rotation X="1.5707963" Y="0" Z="0"/>
+                        </Transform>
+                        <Children Size="1"/>
+                        <Child0 Name="LowerLeg.L" Visible="true" ObType="0" BoneIndex="40">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="0" Y="0" Z="0"/>
+                                <Scale X="1" Y="0.99999994" Z="0.99999994"/>
+                                <Rotation X="-1.2223046" Y="-2.0040274" Z="-1.1250266"/>
+                            </Transform>
+                            <Children Size="4"/>
+                            <Child0 Name="AttackCollider2_3" Visible="true" ObType="0" BoneIndex="-1">
+                                <Collider ColliderType="2" Enable="true" Visible="true" GameType="128">
+                                    <Position X="0" Y="0.30499917" Z="-0.050000001"/>
+                                    <Scale X="0.16" Y="0.40000001" Z="0.25"/>
+                                    <Rotation X="-0.27925268" Y="0" Z="0"/>
+                                </Collider>
+                                <Transform>
+                                    <Position X="0" Y="0" Z="0"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child0>
+                            <Child1 Name="BlockCollider14" Visible="true" ObType="0" BoneIndex="-1">
+                                <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+                                    <Position X="0" Y="0.50624287" Z="-0.09375"/>
+                                    <Scale X="0.2" Y="0.2" Z="0.2"/>
+                                    <Rotation X="0" Y="0" Z="0"/>
+                                </Collider>
+                                <Transform>
+                                    <Position X="0" Y="0" Z="0"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child1>
+                            <Child2 Name="Foot.L.001" Visible="true" ObType="0" BoneIndex="41">
+                                <Shader File="4.Model.hlsl"/>
+                                <Transform>
+                                    <Position X="1.1395663e-05" Y="0.43753892" Z="-2.1708198e-05"/>
+                                    <Scale X="1" Y="0.99999994" Z="1"/>
+                                    <Rotation X="-1.4238571" Y="2.9345648" Z="-2.9181046"/>
+                                </Transform>
+                                <Children Size="2"/>
+                                <Child0 Name="Foot.L" Visible="true" ObType="0" BoneIndex="42">
+                                    <Shader File="4.Model.hlsl"/>
+                                    <Transform>
+                                        <Position X="0" Y="0" Z="0"/>
+                                        <Scale X="1" Y="1" Z="0.99999994"/>
+                                        <Rotation X="-0.0010727035" Y="0.0001192062" Z="-0.2076326"/>
+                                    </Transform>
+                                    <Children Size="1"/>
+                                    <Child0 Name="SoundPoint_FootL" Visible="true" ObType="0" BoneIndex="-1">
+                                        <Transform>
+                                            <Position X="-0.0125" Y="-0.056250006" Z="0.28125003"/>
+                                            <Scale X="1" Y="1" Z="1"/>
+                                            <Rotation X="0" Y="0" Z="0.13962634"/>
+                                        </Transform>
+                                        <Children Size="0"/>
+                                    </Child0>
+                                </Child0>
+                                <Child1 Name="SoundPoint_AnkleL" Visible="true" ObType="0" BoneIndex="-1">
+                                    <Transform>
+                                        <Position X="0" Y="0.17500001" Z="0"/>
+                                        <Scale X="1" Y="1" Z="1"/>
+                                        <Rotation X="0" Y="0" Z="0"/>
+                                    </Transform>
+                                    <Children Size="0"/>
+                                </Child1>
+                            </Child2>
+                            <Child3 Name="HitCollider7" Visible="true" ObType="0" BoneIndex="-1">
+                                <Collider ColliderType="2" Enable="true" Visible="true" GameType="40">
+                                    <Position X="0" Y="0.30500004" Z="-0.050000004"/>
+                                    <Scale X="0.16" Y="0.40000001" Z="0.25"/>
+                                    <Rotation X="-0.27925268" Y="0" Z="0"/>
+                                </Collider>
+                                <Transform>
+                                    <Position X="0" Y="0" Z="0"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child3>
+                        </Child0>
+                    </Child3>
+                    <Child4 Name="IkLegTarget.R" Visible="true" ObType="0" BoneIndex="34">
+                        <Shader File="4.Model.hlsl"/>
+                        <Transform>
+                            <Position X="-0.40189999" Y="0.71439999" Z="0.0394"/>
+                            <Scale X="1" Y="1" Z="1"/>
+                            <Rotation X="1.5707963" Y="0" Z="0"/>
+                        </Transform>
+                        <Children Size="1"/>
+                        <Child0 Name="LowerLeg.R" Visible="true" ObType="0" BoneIndex="35">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="0" Y="0" Z="0"/>
+                                <Scale X="1" Y="0.99999994" Z="0.99999994"/>
+                                <Rotation X="-1.2223046" Y="2.0040274" Z="1.1250266"/>
+                            </Transform>
+                            <Children Size="4"/>
+                            <Child0 Name="AttackCollider2_2" Visible="true" ObType="0" BoneIndex="-1">
+                                <Collider ColliderType="2" Enable="true" Visible="true" GameType="128">
+                                    <Position X="0" Y="0.30499822" Z="-0.050000001"/>
+                                    <Scale X="0.16" Y="0.40000001" Z="0.25"/>
+                                    <Rotation X="-0.27925268" Y="0" Z="0"/>
+                                </Collider>
+                                <Transform>
+                                    <Position X="0" Y="0" Z="0"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child0>
+                            <Child1 Name="BlockCollider13" Visible="true" ObType="0" BoneIndex="-1">
+                                <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+                                    <Position X="0" Y="0.50624847" Z="-0.09375"/>
+                                    <Scale X="0.2" Y="0.2" Z="0.2"/>
+                                    <Rotation X="0" Y="0" Z="0"/>
+                                </Collider>
+                                <Transform>
+                                    <Position X="0" Y="0" Z="0"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child1>
+                            <Child2 Name="Foot.R.001" Visible="true" ObType="0" BoneIndex="36">
+                                <Shader File="4.Model.hlsl"/>
+                                <Transform>
+                                    <Position X="1.4640391e-06" Y="0.43749249" Z="-1.3353303e-05"/>
+                                    <Scale X="1" Y="0.99999994" Z="1"/>
+                                    <Rotation X="-1.4238172" Y="-2.9300511" Z="2.9136658"/>
+                                </Transform>
+                                <Children Size="1"/>
+                                <Child0 Name="Foot.R" Visible="true" ObType="0" BoneIndex="37">
+                                    <Shader File="4.Model.hlsl"/>
+                                    <Transform>
+                                        <Position X="0" Y="0" Z="0"/>
+                                        <Scale X="1" Y="0.99999994" Z="1"/>
+                                        <Rotation X="-0.0011820493" Y="0.00053375051" Z="0.20760651"/>
+                                    </Transform>
+                                    <Children Size="1"/>
+                                    <Child0 Name="SoundPoint_FootR" Visible="true" ObType="0" BoneIndex="-1">
+                                        <Transform>
+                                            <Position X="0.0125" Y="-0.056249823" Z="0.28124693"/>
+                                            <Scale X="1" Y="1" Z="1"/>
+                                            <Rotation X="0" Y="0" Z="-0.13962634"/>
+                                        </Transform>
+                                        <Children Size="0"/>
+                                    </Child0>
+                                </Child0>
+                            </Child2>
+                            <Child3 Name="HitCollider6" Visible="true" ObType="0" BoneIndex="-1">
+                                <Collider ColliderType="2" Enable="true" Visible="true" GameType="40">
+                                    <Position X="0" Y="0.30500001" Z="-0.049999945"/>
+                                    <Scale X="0.16" Y="0.40000001" Z="0.25"/>
+                                    <Rotation X="-0.27925268" Y="0" Z="0"/>
+                                </Collider>
+                                <Transform>
+                                    <Position X="0" Y="0" Z="0"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child3>
+                        </Child0>
+                    </Child4>
+                    <Child5 Name="KneePoleTarget.L" Visible="true" ObType="0" BoneIndex="43">
+                        <Shader File="4.Model.hlsl"/>
+                        <Transform>
+                            <Position X="0.29320002" Y="1.0107167" Z="-0.50733399"/>
+                            <Scale X="1" Y="1" Z="1"/>
+                            <Rotation X="0" Y="0" Z="-0"/>
+                        </Transform>
+                        <Children Size="0"/>
+                    </Child5>
+                    <Child6 Name="KneePoleTarget.R" Visible="true" ObType="0" BoneIndex="38">
+                        <Shader File="4.Model.hlsl"/>
+                        <Transform>
+                            <Position X="-0.29320002" Y="1.0107167" Z="-0.50733399"/>
+                            <Scale X="1" Y="1" Z="1"/>
+                            <Rotation X="5.7301697e-09" Y="7.5697884e-05" Z="-7.5697884e-05"/>
+                        </Transform>
+                        <Children Size="0"/>
+                    </Child6>
+                    <Child7 Name="Spine" Visible="true" ObType="0" BoneIndex="8">
+                        <Shader File="4.Model.hlsl"/>
+                        <Transform>
+                            <Position X="0" Y="1.4353483" Z="0.091709219"/>
+                            <Scale X="1" Y="1" Z="1"/>
+                            <Rotation X="-0.17252092" Y="0" Z="-0"/>
+                        </Transform>
+                        <Children Size="3"/>
+                        <Child0 Name="Spine.001" Visible="true" ObType="0" BoneIndex="9">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="5.0821977e-21" Y="0.18959966" Z="3.7252903e-09"/>
+                                <Scale X="1" Y="1" Z="1"/>
+                                <Rotation X="-0.42550766" Y="2.6175999e-07" Z="-1.0805012e-07"/>
+                            </Transform>
+                            <Children Size="5"/>
+                            <Child0 Name="AttackCollider2_1" Visible="true" ObType="0" BoneIndex="-1">
+                                <Collider ColliderType="2" Enable="true" Visible="true" GameType="128">
+                                    <Position X="0" Y="0.22624999" Z="-0.12375"/>
+                                    <Scale X="0.30000001" Y="0.34999999" Z="0.15000001"/>
+                                    <Rotation X="0.27925268" Y="0" Z="0"/>
+                                </Collider>
+                                <Transform>
+                                    <Position X="0" Y="0" Z="0"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child0>
+                            <Child1 Name="BlockCollider1" Visible="true" ObType="0" BoneIndex="-1">
+                                <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+                                    <Position X="0" Y="0.21250001" Z="0.0625"/>
+                                    <Scale X="0.30000001" Y="0.30000001" Z="0.30000001"/>
+                                    <Rotation X="0" Y="0" Z="0"/>
+                                </Collider>
+                                <Transform>
+                                    <Position X="0" Y="0" Z="0"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child1>
+                            <Child2 Name="HitCollider8" Visible="true" ObType="0" BoneIndex="-1">
+                                <Collider ColliderType="2" Enable="true" Visible="true" GameType="24">
+                                    <Position X="0" Y="0.19500001" Z="-0.030000001"/>
+                                    <Scale X="0.30000001" Y="0.34999999" Z="0.25"/>
+                                    <Rotation X="0.27925268" Y="0" Z="0"/>
+                                </Collider>
+                                <Transform>
+                                    <Position X="0" Y="0" Z="0"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child2>
+                            <Child3 Name="HitCollider9" Visible="true" ObType="0" BoneIndex="-1">
+                                <Collider ColliderType="2" Enable="true" Visible="true" GameType="8">
+                                    <Position X="0" Y="0.27000001" Z="0.29000002"/>
+                                    <Scale X="0.25" Y="0.43000001" Z="0.25"/>
+                                    <Rotation X="0.87266463" Y="0" Z="0"/>
+                                </Collider>
+                                <Transform>
+                                    <Position X="0" Y="0" Z="0"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child3>
+                            <Child4 Name="Spine.002" Visible="true" ObType="0" BoneIndex="10">
+                                <Shader File="4.Model.hlsl"/>
+                                <Transform>
+                                    <Position X="2.7987053e-15" Y="0.17030552" Z="-1.0803342e-07"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="-0.072519317" Y="2.3967502e-07" Z="-3.4640621e-08"/>
+                                </Transform>
+                                <Children Size="4"/>
+                                <Child0 Name="BlockCollider2" Visible="true" ObType="0" BoneIndex="-1">
+                                    <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+                                        <Position X="0" Y="0.22499999" Z="0.22499999"/>
+                                        <Scale X="0.40000001" Y="0.40000001" Z="0.40000001"/>
+                                        <Rotation X="0" Y="0" Z="0"/>
+                                    </Collider>
+                                    <Transform>
+                                        <Position X="0" Y="0" Z="0"/>
+                                        <Scale X="1" Y="1" Z="1"/>
+                                        <Rotation X="0" Y="0" Z="0"/>
+                                    </Transform>
+                                    <Children Size="0"/>
+                                </Child0>
+                                <Child1 Name="Shoulder.L" Visible="true" ObType="0" BoneIndex="12">
+                                    <Shader File="4.Model.hlsl"/>
+                                    <Transform>
+                                        <Position X="0.13584809" Y="0.12351896" Z="0.40929446"/>
+                                        <Scale X="0.99999994" Y="1" Z="0.99999994"/>
+                                        <Rotation X="0.62993562" Y="0.40489033" Z="-1.3234963"/>
+                                    </Transform>
+                                    <Children Size="1"/>
+                                    <Child0 Name="UpperArm.L" Visible="true" ObType="0" BoneIndex="13">
+                                        <Shader File="4.Model.hlsl"/>
+                                        <Transform>
+                                            <Position X="4.8141629e-08" Y="0.31709394" Z="2.8710474e-09"/>
+                                            <Scale X="1" Y="1" Z="1"/>
+                                            <Rotation X="0.39727381" Y="-0.1419072" Z="-1.2030101"/>
+                                        </Transform>
+                                        <Children Size="3"/>
+                                        <Child0 Name="BlockCollider4" Visible="true" ObType="0" BoneIndex="-1">
+                                            <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+                                                <Position X="0.049999718" Y="-0.09375" Z="0"/>
+                                                <Scale X="0.27000001" Y="0.27000001" Z="0.27000001"/>
+                                                <Rotation X="0" Y="0" Z="0"/>
+                                            </Collider>
+                                            <Transform>
+                                                <Position X="0" Y="0" Z="0"/>
+                                                <Scale X="1" Y="1" Z="1"/>
+                                                <Rotation X="0" Y="0" Z="0"/>
+                                            </Transform>
+                                            <Children Size="0"/>
+                                        </Child0>
+                                        <Child1 Name="HitCollider3" Visible="true" ObType="0" BoneIndex="-1">
+                                            <Collider ColliderType="2" Enable="true" Visible="true" GameType="40">
+                                                <Position X="-0.020000001" Y="0" Z="0"/>
+                                                <Scale X="0.13" Y="0.34999999" Z="0.25"/>
+                                                <Rotation X="0.087266468" Y="0" Z="-0.20943952"/>
+                                            </Collider>
+                                            <Transform>
+                                                <Position X="0" Y="0" Z="0"/>
+                                                <Scale X="1" Y="1" Z="1"/>
+                                                <Rotation X="0" Y="0" Z="0"/>
+                                            </Transform>
+                                            <Children Size="0"/>
+                                        </Child1>
+                                        <Child2 Name="LowerArm.L" Visible="true" ObType="0" BoneIndex="14">
+                                            <Shader File="4.Model.hlsl"/>
+                                            <Transform>
+                                                <Position X="-6.3562766e-08" Y="0.54560477" Z="2.2351742e-08"/>
+                                                <Scale X="1" Y="0.99999994" Z="0.99999994"/>
+                                                <Rotation X="-0.29967186" Y="0.075269863" Z="-0.21813178"/>
+                                            </Transform>
+                                            <Children Size="4"/>
+                                            <Child0 Name="BlockCollider7" Visible="true" ObType="0" BoneIndex="-1">
+                                                <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+                                                    <Position X="-0.068749771" Y="0.03125" Z="0"/>
+                                                    <Scale X="0.175" Y="0.175" Z="0.175"/>
+                                                    <Rotation X="0" Y="0" Z="0"/>
+                                                </Collider>
+                                                <Transform>
+                                                    <Position X="0" Y="0" Z="0"/>
+                                                    <Scale X="1" Y="1" Z="1"/>
+                                                    <Rotation X="0" Y="0" Z="0"/>
+                                                </Transform>
+                                                <Children Size="0"/>
+                                            </Child0>
+                                            <Child1 Name="BlockCollider8" Visible="true" ObType="0" BoneIndex="-1">
+                                                <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+                                                    <Position X="0" Y="0.38124999" Z="0"/>
+                                                    <Scale X="0.15000001" Y="0.15000001" Z="0.15000001"/>
+                                                    <Rotation X="0" Y="0" Z="0"/>
+                                                </Collider>
+                                                <Transform>
+                                                    <Position X="0" Y="0" Z="0"/>
+                                                    <Scale X="1" Y="1" Z="1"/>
+                                                    <Rotation X="0" Y="0" Z="0"/>
+                                                </Transform>
+                                                <Children Size="0"/>
+                                            </Child1>
+                                            <Child2 Name="Hand.L" Visible="true" ObType="0" BoneIndex="15">
+                                                <Shader File="4.Model.hlsl"/>
+                                                <Transform>
+                                                    <Position X="-3.4598634e-07" Y="0.45155159" Z="2.4959448e-07"/>
+                                                    <Scale X="0.99999994" Y="0.99999994" Z="1"/>
+                                                    <Rotation X="0.11677611" Y="0.035918642" Z="-0.19874842"/>
+                                                </Transform>
+                                                <Children Size="6"/>
+                                                <Child0 Name="Finger.L" Visible="true" ObType="0" BoneIndex="16">
+                                                    <Shader File="4.Model.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="0.0084889485" Y="0.096084453" Z="-0.041695353"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="-0.044542618" Y="-0.14637496" Z="-0.14282478"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child0>
+                                                <Child1 Name="Finger.L.001" Visible="true" ObType="0" BoneIndex="17">
+                                                    <Shader File="4.Model.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="-0.0027641191" Y="0.10535855" Z="-0.0085432557"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="0.031352643" Y="-0.082393833" Z="-0.10431562"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child1>
+                                                <Child2 Name="Finger.L.002" Visible="true" ObType="0" BoneIndex="18">
+                                                    <Shader File="4.Model.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="-0.0059394324" Y="0.10012335" Z="0.027048798"/>
+                                                        <Scale X="0.99999994" Y="1" Z="1"/>
+                                                        <Rotation X="0.11942642" Y="0.029321641" Z="-0.08860676"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child2>
+                                                <Child3 Name="Finger.L.003" Visible="true" ObType="0" BoneIndex="19">
+                                                    <Shader File="4.Model.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="0.0037785037" Y="0.09245941" Z="0.056704797"/>
+                                                        <Scale X="0.99999994" Y="1" Z="0.99999994"/>
+                                                        <Rotation X="0.25414923" Y="0.27081138" Z="-0.19309516"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child3>
+                                                <Child4 Name="SoundPoint_HandL" Visible="true" ObType="0" BoneIndex="-1">
+                                                    <Transform>
+                                                        <Position X="0" Y="0.13750002" Z="0"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="0" Y="0" Z="0"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child4>
+                                                <Child5 Name="Thumb.L" Visible="true" ObType="0" BoneIndex="20">
+                                                    <Shader File="4.Model.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="0.056214511" Y="0.079599075" Z="-0.068112217"/>
+                                                        <Scale X="0.99999994" Y="1" Z="1"/>
+                                                        <Rotation X="-0.43449083" Y="-2.2702312" Z="0.31901127"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child5>
+                                            </Child2>
+                                            <Child3 Name="HitCollider5" Visible="true" ObType="0" BoneIndex="-1">
+                                                <Collider ColliderType="2" Enable="true" Visible="true" GameType="8">
+                                                    <Position X="-0.045000002" Y="0.22500002" Z="-0.010000004"/>
+                                                    <Scale X="0.15000001" Y="0.40000001" Z="0.15000001"/>
+                                                    <Rotation X="0" Y="0" Z="-0.24434611"/>
+                                                </Collider>
+                                                <Transform>
+                                                    <Position X="0" Y="0" Z="0"/>
+                                                    <Scale X="1" Y="1" Z="1"/>
+                                                    <Rotation X="0" Y="0" Z="0"/>
+                                                </Transform>
+                                                <Children Size="0"/>
+                                            </Child3>
+                                        </Child2>
+                                    </Child0>
+                                </Child1>
+                                <Child2 Name="Shoulder.R" Visible="true" ObType="0" BoneIndex="21">
+                                    <Shader File="4.Model.hlsl"/>
+                                    <Transform>
+                                        <Position X="-0.13584849" Y="0.12351887" Z="0.40929443"/>
+                                        <Scale X="1" Y="0.99999994" Z="0.99999994"/>
+                                        <Rotation X="0.62993538" Y="-0.40489113" Z="1.3234968"/>
+                                    </Transform>
+                                    <Children Size="1"/>
+                                    <Child0 Name="UpperArm.R" Visible="true" ObType="0" BoneIndex="22">
+                                        <Shader File="4.Model.hlsl"/>
+                                        <Transform>
+                                            <Position X="7.7810625e-08" Y="0.31709391" Z="5.7684701e-10"/>
+                                            <Scale X="1" Y="1" Z="0.99999994"/>
+                                            <Rotation X="0.3972764" Y="0.14191067" Z="1.2030089"/>
+                                        </Transform>
+                                        <Children Size="3"/>
+                                        <Child0 Name="BlockCollider3" Visible="true" ObType="0" BoneIndex="-1">
+                                            <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+                                                <Position X="-0.050000001" Y="-0.093750015" Z="0"/>
+                                                <Scale X="0.27000001" Y="0.27000001" Z="0.27000001"/>
+                                                <Rotation X="0" Y="0" Z="0"/>
+                                            </Collider>
+                                            <Transform>
+                                                <Position X="0" Y="0" Z="0"/>
+                                                <Scale X="1" Y="1" Z="1"/>
+                                                <Rotation X="0" Y="0" Z="0"/>
+                                            </Transform>
+                                            <Children Size="0"/>
+                                        </Child0>
+                                        <Child1 Name="HitCollider2" Visible="true" ObType="0" BoneIndex="-1">
+                                            <Collider ColliderType="2" Enable="true" Visible="true" GameType="40">
+                                                <Position X="0.02" Y="0" Z="0"/>
+                                                <Scale X="0.13" Y="0.34999999" Z="0.25"/>
+                                                <Rotation X="0.087266468" Y="0" Z="0.20943952"/>
+                                            </Collider>
+                                            <Transform>
+                                                <Position X="0" Y="0" Z="0"/>
+                                                <Scale X="1" Y="1" Z="1"/>
+                                                <Rotation X="0" Y="0" Z="0"/>
+                                            </Transform>
+                                            <Children Size="0"/>
+                                        </Child1>
+                                        <Child2 Name="LowerArm.R" Visible="true" ObType="0" BoneIndex="23">
+                                            <Shader File="4.Model.hlsl"/>
+                                            <Transform>
+                                                <Position X="-8.5216016e-08" Y="0.54560566" Z="1.8626453e-08"/>
+                                                <Scale X="1" Y="1" Z="1"/>
+                                                <Rotation X="-0.29968131" Y="-0.075271547" Z="0.21813923"/>
+                                            </Transform>
+                                            <Children Size="4"/>
+                                            <Child0 Name="BlockCollider5" Visible="true" ObType="0" BoneIndex="-1">
+                                                <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+                                                    <Position X="0.068750001" Y="0.031250004" Z="0"/>
+                                                    <Scale X="0.175" Y="0.175" Z="0.175"/>
+                                                    <Rotation X="0" Y="0" Z="0"/>
+                                                </Collider>
+                                                <Transform>
+                                                    <Position X="0" Y="0" Z="0"/>
+                                                    <Scale X="1" Y="1" Z="1"/>
+                                                    <Rotation X="0" Y="0" Z="0"/>
+                                                </Transform>
+                                                <Children Size="0"/>
+                                            </Child0>
+                                            <Child1 Name="BlockCollider6" Visible="true" ObType="0" BoneIndex="-1">
+                                                <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+                                                    <Position X="0" Y="0.38125005" Z="0"/>
+                                                    <Scale X="0.15000001" Y="0.15000001" Z="0.15000001"/>
+                                                    <Rotation X="0" Y="0" Z="0"/>
+                                                </Collider>
+                                                <Transform>
+                                                    <Position X="0" Y="0" Z="0"/>
+                                                    <Scale X="1" Y="1" Z="1"/>
+                                                    <Rotation X="0" Y="0" Z="0"/>
+                                                </Transform>
+                                                <Children Size="0"/>
+                                            </Child1>
+                                            <Child2 Name="Hand.R" Visible="true" ObType="0" BoneIndex="24">
+                                                <Shader File="4.Model.hlsl"/>
+                                                <Transform>
+                                                    <Position X="1.8626451e-08" Y="0.45155129" Z="-6.7055232e-08"/>
+                                                    <Scale X="1" Y="0.99999994" Z="1"/>
+                                                    <Rotation X="0.11677996" Y="-0.035918653" Z="0.19874553"/>
+                                                </Transform>
+                                                <Children Size="11"/>
+                                                <Child0 Name="AttackCollider1_1" Visible="true" ObType="0" BoneIndex="-1">
+                                                    <Collider ColliderType="2" Enable="true" Visible="true" GameType="0">
+                                                        <Position X="-0.17999999" Y="0.28000012" Z="-1.5200003"/>
+                                                        <Scale X="0.050000001" Y="0.25" Z="0.80000001"/>
+                                                        <Rotation X="0" Y="0.087266468" Z="0"/>
+                                                    </Collider>
+                                                    <Transform>
+                                                        <Position X="0" Y="0" Z="0"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="0" Y="0" Z="0"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child0>
+                                                <Child1 Name="AttackCollider1_2" Visible="true" ObType="0" BoneIndex="-1">
+                                                    <Collider ColliderType="2" Enable="true" Visible="true" GameType="0">
+                                                        <Position X="-0.035" Y="0.15000004" Z="0.33000013"/>
+                                                        <Scale X="0.050000001" Y="0.059999999" Z="1.05"/>
+                                                        <Rotation X="0.06981317" Y="0.06981317" Z="0"/>
+                                                    </Collider>
+                                                    <Transform>
+                                                        <Position X="0" Y="0" Z="0"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="0" Y="0" Z="0"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child1>
+                                                <Child2 Name="Finger.R" Visible="true" ObType="0" BoneIndex="25">
+                                                    <Shader File="4.Model.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="-0.0084890015" Y="0.096084312" Z="-0.041695368"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="-0.044542644" Y="0.14637494" Z="0.14282478"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child2>
+                                                <Child3 Name="Finger.R.001" Visible="true" ObType="0" BoneIndex="26">
+                                                    <Shader File="4.Model.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="0.0027639372" Y="0.10535847" Z="-0.0085432632"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="0.03135268" Y="0.082393847" Z="0.10431556"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child3>
+                                                <Child4 Name="Finger.R.002" Visible="true" ObType="0" BoneIndex="27">
+                                                    <Shader File="4.Model.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="0.0059393533" Y="0.1001232" Z="0.027048783"/>
+                                                        <Scale X="0.99999994" Y="1" Z="1"/>
+                                                        <Rotation X="0.11942646" Y="-0.029321669" Z="0.088606723"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child4>
+                                                <Child5 Name="Finger.R.003" Visible="true" ObType="0" BoneIndex="28">
+                                                    <Shader File="4.Model.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="-0.003778656" Y="0.092459455" Z="0.056704797"/>
+                                                        <Scale X="0.99999994" Y="1" Z="1"/>
+                                                        <Rotation X="0.25414929" Y="-0.27081132" Z="0.19309506"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child5>
+                                                <Child6 Name="SoundPoint_WeaponBlade" Visible="true" ObType="0" BoneIndex="-1">
+                                                    <Transform>
+                                                        <Position X="-0.17812499" Y="0.51875007" Z="-1.3937501"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="0" Y="0.06981317" Z="0"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child6>
+                                                <Child7 Name="SoundPoint_WeaponHandle" Visible="true" ObType="0" BoneIndex="-1">
+                                                    <Transform>
+                                                        <Position X="0.056249999" Y="0.081250004" Z="1.3750001"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="0" Y="0.087266468" Z="0"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child7>
+                                                <Child8 Name="Thumb.R" Visible="true" ObType="0" BoneIndex="29">
+                                                    <Shader File="4.Model.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="-0.056214612" Y="0.079599008" Z="-0.068112239"/>
+                                                        <Scale X="0.99999994" Y="1" Z="1"/>
+                                                        <Rotation X="-0.4344908" Y="2.270231" Z="-0.31901109"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child8>
+                                                <Child9 Name="TrailEnd" Visible="true" ObType="0" BoneIndex="-1">
+                                                    <Transform>
+                                                        <Position X="-0.245625" Y="0.23500003" Z="-2.3125002"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="0" Y="0" Z="0"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child9>
+                                                <Child10 Name="TrailStart" Visible="true" ObType="0" BoneIndex="-1">
+                                                    <Transform>
+                                                        <Position X="-0.13124999" Y="0.41875005" Z="-0.89375013"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="0" Y="0" Z="0"/>
+                                                    </Transform>
+                                                    <Children Size="0"/>
+                                                </Child10>
+                                            </Child2>
+                                            <Child3 Name="HitCollider4" Visible="true" ObType="0" BoneIndex="-1">
+                                                <Collider ColliderType="2" Enable="true" Visible="true" GameType="8">
+                                                    <Position X="0.044999994" Y="0.22500005" Z="-0.010000004"/>
+                                                    <Scale X="0.15000001" Y="0.40000001" Z="0.15000001"/>
+                                                    <Rotation X="0" Y="0" Z="0.24434611"/>
+                                                </Collider>
+                                                <Transform>
+                                                    <Position X="0" Y="0" Z="0"/>
+                                                    <Scale X="1" Y="1" Z="1"/>
+                                                    <Rotation X="0" Y="0" Z="0"/>
+                                                </Transform>
+                                                <Children Size="0"/>
+                                            </Child3>
+                                        </Child2>
+                                    </Child0>
+                                </Child2>
+                                <Child3 Name="Spine.003" Visible="true" ObType="0" BoneIndex="11">
+                                    <Shader File="4.Model.hlsl"/>
+                                    <Transform>
+                                        <Position X="-5.0991397e-14" Y="0.50434428" Z="-2.9802322e-08"/>
+                                        <Scale X="1" Y="1" Z="1"/>
+                                        <Rotation X="-0.9002465" Y="1.4981849e-07" Z="-4.9097213e-07"/>
+                                    </Transform>
+                                    <Children Size="2"/>
+                                    <Child0 Name="HeadEffecter" Visible="true" ObType="0" BoneIndex="-1">
+                                        <Transform>
+                                            <Position X="0" Y="0.125" Z="0.0625"/>
+                                            <Scale X="1" Y="1" Z="1"/>
+                                            <Rotation X="0" Y="0" Z="0"/>
+                                        </Transform>
+                                        <Children Size="0"/>
+                                    </Child0>
+                                    <Child1 Name="HitCollider1" Visible="true" ObType="0" BoneIndex="-1">
+                                        <Collider ColliderType="2" Enable="true" Visible="true" GameType="40">
+                                            <Position X="0.030000001" Y="-0.094999999" Z="0.105"/>
+                                            <Scale X="0.25" Y="0.30000001" Z="0.175"/>
+                                            <Rotation X="-0.29670599" Y="0" Z="0"/>
+                                        </Collider>
+                                        <Transform>
+                                            <Position X="0" Y="0" Z="0"/>
+                                            <Scale X="1" Y="1" Z="1"/>
+                                            <Rotation X="0" Y="0" Z="0"/>
+                                        </Transform>
+                                        <Children Size="0"/>
+                                    </Child1>
+                                </Child3>
+                            </Child4>
+                        </Child0>
+                        <Child1 Name="UpperLeg.L" Visible="true" ObType="0" BoneIndex="30">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="0.11800899" Y="0.16030242" Z="-0.0037565976"/>
+                                <Scale X="0.99999994" Y="1" Z="0.99999994"/>
+                                <Rotation X="0.39042062" Y="0.10065164" Z="-2.6336215"/>
+                            </Transform>
+                            <Children Size="1"/>
+                            <Child0 Name="Knee.L" Visible="true" ObType="0" BoneIndex="31">
+                                <Shader File="4.Model.hlsl"/>
+                                <Transform>
+                                    <Position X="1.4720717e-07" Y="0.38428777" Z="4.2840838e-08"/>
+                                    <Scale X="1" Y="0.99999994" Z="0.99999994"/>
+                                    <Rotation X="0.35072881" Y="-0.073735006" Z="-0.29958463"/>
+                                </Transform>
+                                <Children Size="3"/>
+                                <Child0 Name="BlockCollider11" Visible="true" ObType="0" BoneIndex="-1">
+                                    <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+                                        <Position X="0" Y="-0.15625" Z="0"/>
+                                        <Scale X="0.15000001" Y="0.15000001" Z="0.15000001"/>
+                                        <Rotation X="0" Y="0" Z="0"/>
+                                    </Collider>
+                                    <Transform>
+                                        <Position X="0" Y="0" Z="0"/>
+                                        <Scale X="1" Y="1" Z="1"/>
+                                        <Rotation X="0" Y="0" Z="0"/>
+                                    </Transform>
+                                    <Children Size="0"/>
+                                </Child0>
+                                <Child1 Name="BlockCollider12" Visible="true" ObType="0" BoneIndex="-1">
+                                    <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+                                        <Position X="0" Y="0.38749999" Z="0"/>
+                                        <Scale X="0.15000001" Y="0.15000001" Z="0.15000001"/>
+                                        <Rotation X="0" Y="0" Z="0"/>
+                                    </Collider>
+                                    <Transform>
+                                        <Position X="0" Y="0" Z="0"/>
+                                        <Scale X="1" Y="1" Z="1"/>
+                                        <Rotation X="0" Y="0" Z="0"/>
+                                    </Transform>
+                                    <Children Size="0"/>
+                                </Child1>
+                                <Child2 Name="HitCollider11" Visible="true" ObType="0" BoneIndex="-1">
+                                    <Collider ColliderType="2" Enable="true" Visible="true" GameType="8">
+                                        <Position X="0" Y="0.10000001" Z="0"/>
+                                        <Scale X="0.125" Y="0.34999999" Z="0.15000001"/>
+                                        <Rotation X="-0.06981317" Y="0" Z="0"/>
+                                    </Collider>
+                                    <Transform>
+                                        <Position X="0" Y="0" Z="0"/>
+                                        <Scale X="1" Y="1" Z="1"/>
+                                        <Rotation X="0" Y="0" Z="0"/>
+                                    </Transform>
+                                    <Children Size="0"/>
+                                </Child2>
+                            </Child0>
+                        </Child1>
+                        <Child2 Name="UpperLeg.R" Visible="true" ObType="0" BoneIndex="32">
+                            <Shader File="4.Model.hlsl"/>
+                            <Transform>
+                                <Position X="-0.11800898" Y="0.16030242" Z="-0.0037565976"/>
+                                <Scale X="0.99999994" Y="0.99999994" Z="0.99999994"/>
+                                <Rotation X="0.39045304" Y="-0.10066354" Z="2.6337516"/>
+                            </Transform>
+                            <Children Size="1"/>
+                            <Child0 Name="Knee.R" Visible="true" ObType="0" BoneIndex="33">
+                                <Shader File="4.Model.hlsl"/>
+                                <Transform>
+                                    <Position X="8.0326581e-09" Y="0.38426638" Z="2.0489098e-08"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0.35072669" Y="0.07390587" Z="0.29942003"/>
+                                </Transform>
+                                <Children Size="3"/>
+                                <Child0 Name="BlockCollider10" Visible="true" ObType="0" BoneIndex="-1">
+                                    <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+                                        <Position X="0" Y="0.38750005" Z="0"/>
+                                        <Scale X="0.15000001" Y="0.15000001" Z="0.15000001"/>
+                                        <Rotation X="0" Y="0" Z="0"/>
+                                    </Collider>
+                                    <Transform>
+                                        <Position X="0" Y="0" Z="0"/>
+                                        <Scale X="1" Y="1" Z="1"/>
+                                        <Rotation X="0" Y="0" Z="0"/>
+                                    </Transform>
+                                    <Children Size="0"/>
+                                </Child0>
+                                <Child1 Name="BlockCollider9" Visible="true" ObType="0" BoneIndex="-1">
+                                    <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+                                        <Position X="0" Y="-0.15625001" Z="0"/>
+                                        <Scale X="0.15000001" Y="0.15000001" Z="0.15000001"/>
+                                        <Rotation X="0" Y="0" Z="0"/>
+                                    </Collider>
+                                    <Transform>
+                                        <Position X="0" Y="0" Z="0"/>
+                                        <Scale X="1" Y="1" Z="1"/>
+                                        <Rotation X="0" Y="0" Z="0"/>
+                                    </Transform>
+                                    <Children Size="0"/>
+                                </Child1>
+                                <Child2 Name="HitCollider10" Visible="true" ObType="0" BoneIndex="-1">
+                                    <Collider ColliderType="2" Enable="true" Visible="true" GameType="8">
+                                        <Position X="0" Y="0.10000004" Z="0.065000005"/>
+                                        <Scale X="0.125" Y="0.34999999" Z="0.15000001"/>
+                                        <Rotation X="-0.06981317" Y="0" Z="0"/>
+                                    </Collider>
+                                    <Transform>
+                                        <Position X="0" Y="0" Z="0"/>
+                                        <Scale X="1" Y="1" Z="1"/>
+                                        <Rotation X="0" Y="0" Z="0"/>
+                                    </Transform>
+                                    <Children Size="0"/>
+                                </Child2>
+                            </Child0>
+                        </Child2>
+                    </Child7>
+                </Child1>
+            </Child0>
+        </Child0>
+        <Child1 Name="Limbs" Visible="true" ObType="0" BoneIndex="46">
+            <Mesh File="Giant/Limbs.mesh"/>
+            <Shader File="4.Model.hlsl"/>
+            <Material File="Giant/Limbs.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child1>
+        <Child2 Name="Torso" Visible="true" ObType="0" BoneIndex="45">
+            <Mesh File="Giant/Torso.mesh"/>
+            <Shader File="4.Model.hlsl"/>
+            <Material File="Giant/Torso.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child2>
+        <Child3 Name="Weapon" Visible="true" ObType="0" BoneIndex="44">
+            <Mesh File="Giant/Weapon.mesh"/>
+            <Shader File="4.Model.hlsl"/>
+            <Material File="Giant/Torso.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child3>
+    </Child1>
+</Root>

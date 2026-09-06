@@ -1,0 +1,37 @@
+<Root Name="Root" Visible="true" ObType="1">
+    <Mesh File="2.Sphere.mesh"/>
+    <Shader File="2.Shapes.hlsl"/>
+    <Material File="redBullet.mtl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="1" Y="1" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="2"/>
+    <Child0 Name="AttackCollider1_1" Visible="true" ObType="0">
+        <Collider ColliderType="0" Enable="true" Visible="true" GameType="0">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="0.8" Y="0.8" Z="0.8"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+	<Child1 Name="HitCollider1" Visible="true" ObType="0">
+		<Collider ColliderType="0" Enable="true" Visible="true" GameType="776">
+			<Position X="0" Y="0" Z="0"/>
+			<Scale X="0.8" Y="0.8" Z="0.8"/>
+			<Rotation X="0" Y="0" Z="0"/>
+		</Collider>
+		<Transform>
+			<Position X="0" Y="0" Z="0"/>
+			<Scale X="1" Y="1" Z="1"/>
+			<Rotation X="0" Y="0" Z="0"/>
+		</Transform>
+		<Children Size="0"/>
+	</Child1>
+</Root>
